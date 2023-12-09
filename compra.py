@@ -47,7 +47,6 @@ def checkout(wait):
     wait.until(ec.visibility_of_element_located((By.ID, 'shopping_cart_container'))).click()
     wait.until(ec.visibility_of_element_located((By.ID, 'checkout'))).click()
 
-
 def preencherEndereco(wait, data):
     wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, '[data-test="firstName"]'))).send_keys(data[0]['firstName'])
     wait.until(ec.visibility_of_element_located((By.CSS_SELECTOR, '[data-test="lastName"]'))).send_keys(data[0]['lastName'])
